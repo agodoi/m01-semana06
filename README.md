@@ -175,6 +175,11 @@ Em resumo... A qualidade de software é um fator essencial para o sucesso de qua
 * NBR ISO 10011 --> Auditoria de Sistemas de Qualidade (processo).
 * CMMI --> Capability Maturity Model Integration. Modelo da SEI (Instituto de Engenharia de Software do Departamento de Defesa dos USA) para avaliação da qualidade do processo de desenvolvimento de software. Não é uma norma ISO, mas é muito bem aceita no mercado.
 * SPICE ISO 15504 --> Projeto da ISO/IEC para avaliação do processo de desenvolvimento de software. Ainda não é uma norma oficial ISO, mas o processo está em andamento.
+* 
+### Como Medir a Qualidade
+
+[Acesse o link](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
+
 
 ## 1 Refatoração
 
