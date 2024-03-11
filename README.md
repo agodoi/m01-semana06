@@ -152,9 +152,9 @@ const resultado2 = calcular('*', 4, 5);
 console.log(resultado2); // 20
 ```
 
-#### o grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens.
+#### O que precisa fazer? O grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens.
 
-3 GRUPOS FELIZARDOS SERÃO SORTEADOS PARA VIR EXPLICAR...
+#### 3 GRUPOS FELIZARDOS SERÃO SORTEADOS PARA VIR EXPLICAR...
 
 #### Fatores que influenciam a qualidade de software:
 
