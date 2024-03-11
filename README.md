@@ -107,3 +107,22 @@ gato.comer(); // O Gato Mia está comendo!
 
 Neste exemplo, o método ```comer``` foi movido para a classe ```Animal```. Agora, ele é executado da mesma maneira em ambas as classes filhas, sem duplicação de código.
 
+#### Observações
+
+Benefícios do Pull-up Method:
+
+* Evita duplicação de código: Reduz a quantidade de código repetido em diferentes classes.
+* Aumenta a legibilidade: Torna o código mais fácil de entender e manter.
+* Facilita a manutenção: Permite modificar o comportamento em um único lugar, impactando todas as classes que o utilizam.
+* Limitações do Pull-up Method:
+
+Nem sempre é possível: 
+
+* O método só pode ser movido se for usado por todas as classes filhas da mesma forma.
+* Pode afetar a performance: Se o método for muito grande, movê-lo para a classe pai pode aumentar o tamanho da classe e afetar a performance.
+
+Quando usar o Pull-up Method:
+
+* Quando um método é duplicado em várias classes filhas.
+* Quando o método tem o mesmo comportamento em todas as classes filhas.
+* Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
