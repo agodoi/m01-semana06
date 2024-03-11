@@ -808,7 +808,7 @@ Quando usar o Replace Temp With Query:
 ### Desafio! Dados os códigos acima, você detectou algum tipo de debug de código?
 
 
-remover comentário na fonte
+remover comentário no markdown.
 
 
 <!--
@@ -824,5 +824,11 @@ remover comentário na fonte
 O grupo deve escolher um método de refatoração, desenvolver um código e apresentar o antes e o depois da refatoração.
 
 O melhor grupo leva um prêmio!
+
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana06/blob/main/imgs/rodadopeao.jpg">
+   <img alt="Página HTML Estática" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana06/blob/main/imgs/rodadopeao.jpg)">
+</picture>
 
 
