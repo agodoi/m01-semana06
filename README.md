@@ -458,3 +458,104 @@ Quando usar o Extract Subclass:
 * Quando uma classe possui funcionalidades que são utilizadas apenas por um subconjunto de seus objetos.
 * Quando você deseja melhorar a organização, legibilidade e manutenabilidade do código.
 * Quando você deseja aplicar o princípio da responsabilidade única, ou seja, cada classe deve ter um único propósito.
+ 
+### Método Extract Super Class
+
+O Extract Superclass visa **criar uma nova superclasse a partir de um conjunto de características comuns em duas ou mais classes filhas**. 
+
+Exemplo. Um código com duas classes filhas ```Cachorro``` e ```Gato``` que herdam da classe ```Animal```:
+
+```
+class Animal {
+  constructor(nome) {
+    this.nome = nome;
+  }
+}
+
+class Cachorro extends Animal {
+  constructor(nome, raça) {
+    super(nome);
+    this.raça = raça;
+  }
+
+  latir() {
+    console.log(`O cachorro ${this.nome} está latindo!`);
+  }
+}
+
+class Gato extends Animal {
+  constructor(nome, raça) {
+    super(nome);
+    this.raça = raça;
+  }
+
+  miar() {
+    console.log(`O gato ${this.nome} está miando!`);
+  }
+}
+
+const cachorro = new Cachorro('Rex', 'Labrador');
+cachorro.latir(); // O cachorro Rex está latindo!
+
+const gato = new Gato('Mia', 'Siamês');
+gato.miar(); // O gato Mia está miando!
+```
+
+Observe que as classes ```Cachorro``` e ```Gato``` possuem atributos e métodos em comum, como ```nome``` e ```raça```. Podemos usar o Extract Superclass para criar uma nova superclasse ```Mamifero``` que herda as características comuns:
+
+```
+class Mamifero {
+  constructor(nome, raça) {
+    this.nome = nome;
+    this.raça = raça;
+  }
+}
+
+class Cachorro extends Mamifero {
+  constructor(nome, raça) {
+    super(nome, raça);
+  }
+
+  latir() {
+    console.log(`O cachorro ${this.nome} está latindo!`);
+  }
+}
+
+class Gato extends Mamifero {
+  constructor(nome, raça) {
+    super(nome, raça);
+  }
+
+  miar() {
+    console.log(`O gato ${this.nome} está miando!`);
+  }
+}
+
+const cachorro = new Cachorro('Rex', 'Labrador');
+cachorro.latir(); // O cachorro Rex está latindo!
+
+const gato = new Gato('Mia', 'Siamês');
+gato.miar(); // O gato Mia está miando!
+```
+
+Neste exemplo, a superclasse ```Mamifero``` foi criada para agrupar as características comuns das classes ```Cachorro``` e ```Gato```. As classes filhas herdam essas características e implementam seus próprios métodos específicos.
+
+#### Observações
+
+Benefícios do Extract Superclass:
+
+* Elimina a duplicação de código: remove a necessidade de repetir código em diferentes classes filhas.
+* Aumenta a legibilidade: Torna o código mais fácil de entender, pois as características comuns estão agrupadas em uma única classe.
+* Facilita a manutenção: Permite modificar as características comuns em um único lugar, impactando todas as classes filhas.
+
+Limitações do Extract Superclass:
+
+* Nem sempre é possível: A técnica só pode ser aplicada se existe um conjunto de características comuns em duas ou mais classes filhas.
+* Pode afetar a performance: Se a superclasse for muito grande, pode aumentar o tamanho das classes filhas e afetar a performance.
+
+Quando usar o Extract Superclass:
+
+* Quando duas ou mais classes filhas possuem características comuns.
+* Quando você deseja eliminar a duplicação de código.
+* Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
+
