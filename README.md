@@ -629,5 +629,9 @@ Quando usar o Replace Temp With Query:
 * Quando você deseja melhorar a legibilidade e facilitar a manutenção do código.
 * Quando você deseja evitar erros relacionados ao cálculo do valor da variável temporária.
 
+### Debugando códigos
+
+### Desafio! Dados os códigos acima, você detectou algum tipo de debug de código?
+
 
 
