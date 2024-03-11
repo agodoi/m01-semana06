@@ -111,7 +111,7 @@ No exemplo, o código responde rapidamente às solicitações do usuário. Isso 
 
 
 
-Dado o código a seguir, o grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens.
+Dado o código a seguir:
 
 ```
 function somar(a, b) {
@@ -152,6 +152,9 @@ const resultado2 = calcular('*', 4, 5);
 console.log(resultado2); // 20
 ```
 
+#### o grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens.
+
+3 GRUPOS FELIZARDOS SERÃO SORTEADOS PARA VIR EXPLICAR...
 
 #### Fatores que influenciam a qualidade de software:
 
