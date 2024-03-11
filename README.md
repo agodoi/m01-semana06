@@ -559,3 +559,75 @@ Quando usar o Extract Superclass:
 * Quando você deseja eliminar a duplicação de código.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
+### Método Replace Temp With Query
+
+É uma técnica de refatoração que visa eliminar variáveis temporárias que armazenam o resultado de expressões complexas. Essa técnica substitui a variável por uma chamada direta à função que calcula a expressão, tornando o código mais legível e fácil de manter.
+
+Exemplo: suponha que temos uma função que calcula o preço total de uma compra com base na quantidade de itens e no preço unitário, e queremos aplicar um desconto de 10% se o preço total for maior que $100.
+
+#### Antes da refatoração:
+
+```
+function calculateTotalPrice(quantity, unitPrice) {
+    let totalPrice = quantity * unitPrice;
+    
+    // Aplica um desconto de 10% se o preço total for maior que $100
+    if (totalPrice > 100) {
+        totalPrice -= (totalPrice * 0.1);
+    }
+    
+    return totalPrice;
+}
+
+console.log(calculateTotalPrice(5, 25)); // Saída: 125
+```
+
+#### Após a refatoração:
+
+```
+function calculateTotalPrice(quantity, unitPrice) {
+    // Remove a variável temporária totalPrice e chama uma função para calcular o preço com desconto
+    if (calculateDiscountedPrice(quantity, unitPrice) > 100) {
+        return calculateDiscountedPrice(quantity, unitPrice);
+    } else {
+        return quantity * unitPrice;
+    }
+}
+
+function calculateDiscountedPrice(quantity, unitPrice) {
+    let totalPrice = quantity * unitPrice;
+    
+    // Calcula o preço com desconto de 10%
+    if (totalPrice > 100) {
+        totalPrice -= (totalPrice * 0.1);
+    }
+    
+    return totalPrice;
+}
+
+console.log(calculateTotalPrice(5, 25)); // Saída: 125
+```
+
+Neste exemplo, inicialmente tínhamos uma variável temporária ```totalPrice``` que armazenava o preço total calculado. Após a refatoração, essa variável temporária foi removida e substituída por uma chamada à função ```calculateDiscountedPrice```, que calcula o preço total com o desconto aplicado. Isso elimina a necessidade da variável temporária e torna o código mais claro e conciso.
+
+#### Observações
+
+Benefícios do Replace Temp With Query:
+
+* Melhora a legibilidade: elimina variáveis temporárias, tornando o código mais fácil de entender.
+* Facilita a manutenção: reduz a quantidade de código e nesse caso, torna mais fácil modificar o cálculo do desconto.
+* Evita erros: diminui a chance de erros.
+
+Limitações do Replace Temp With Query:
+
+* Nem sempre é possível: a técnica só pode ser aplicada quando a expressão que calcula o valor da variável temporária é simples e pode ser facilmente transformada em uma função.
+* Pode aumentar a complexidade do código: se a expressão for muito complexa, transformá-la em uma função pode aumentar a complexidade do código.
+
+Quando usar o Replace Temp With Query:
+
+* Quando você tem variáveis temporárias que armazenam o resultado de expressões complexas.
+* Quando você deseja melhorar a legibilidade e facilitar a manutenção do código.
+* Quando você deseja evitar erros relacionados ao cálculo do valor da variável temporária.
+
+
+
