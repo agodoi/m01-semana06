@@ -633,7 +633,7 @@ Quando usar o Replace Temp With Query:
 
 ### Desafio! Dados os códigos acima, você detectou algum tipo de debug de código?
 
-<! --
+<!--
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana06/blob/main/imgs/Capture.PNG">
    <img alt="Página HTML Estática" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana06/blob/main/imgs/Capture.PNG)">
