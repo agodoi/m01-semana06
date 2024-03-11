@@ -103,6 +103,12 @@ No exemplo, o código responde rapidamente às solicitações do usuário. Isso 
 ### Mãos à obra
 
 
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana06/blob/main/imgs/imaos_a_obra.jpg">
+   <img alt="Página HTML Estática" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana06/blob/main/imgs/imaos_a_obra.jpg)">
+</picture>
+
+
 
 
 Dado o código a seguir, o grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens.
