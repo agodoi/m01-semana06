@@ -7,6 +7,162 @@ Modularizando e organizando o jogo (scripts e cenas). Compartilhamento dos ponto
 Lógica algorítmica
 
 
+## O que é Qualidade de Software?
+
+É um conjunto de características que um software, antes de ser posto para produção, deve ter para atender às necessidades dos seus usuários e às expectativas dos stakeholders. Ela envolve diversos aspectos, como:
+
+1) Conformidade com requisitos: o software deve atender aos requisitos especificados pelos usuários e stakeholders.
+2) Ausência de defeitos: ele deve estar livre de erros e bugs que afetem seu funcionamento.
+3) Usabilidade: deve ser fácil de usar e entender pelos usuários.
+4) Eficiência: deve executar suas tarefas de forma eficiente, utilizando os recursos do sistema de forma otimizada.
+5) Manutenabilidade: deve ser fácil de modificar e corrigir quando necessário.
+6) Segurança: deve ser protegido contra acessos não autorizados e ataques cibernéticos.
+7) Portabilidade: deve ser capaz de funcionar em diferentes plataformas e ambientes.
+8) Escalabilidade: deve ser capaz de lidar com o aumento da carga de trabalho e do número de usuários.
+9) Desempenho: deve responder rapidamente às solicitações dos usuários.
+10) Compatibilidade: deve ser compatível com outros softwares e sistemas.
+11) Documentação: deve ter documentação clara e completa que facilite seu uso e manutenção.
+
+1. Modularidade:
+
+A modularidade se refere à organização do código em unidades menores e independentes, chamadas de módulos. Cada módulo possui uma função específica e bem definida, o que torna o código mais organizado, fácil de entender e modificar.
+
+<!--
+No exemplo, as funções somar, subtrair, multiplicar e dividir são módulos que implementam operações matemáticas específicas. A função calcular utiliza esses módulos para realizar diferentes operações, evitando duplicação de código e aumentando a legibilidade.
+-->
+
+2. Reuso de código:
+
+O reuso de código consiste em utilizar o mesmo código em diferentes partes do programa. Isso evita duplicação de código e aumenta a eficiência do desenvolvimento.
+
+<!--
+No exemplo, a função calcular reutiliza as funções somar, subtrair, multiplicar e dividir para realizar diferentes operações matemáticas. Isso evita a duplicação do código que realiza os cálculos matemáticos e torna o código mais eficiente.
+-->
+
+3. Legibilidade:
+
+A legibilidade se refere à facilidade de ler e entender o código. Um código legível é escrito de forma clara, concisa e organizada, com nomes de variáveis e funções descritivos.
+
+<!--
+No exemplo, o código está bem formatado e utiliza nomes de variáveis e funções descritivos, como somar, subtrair, multiplicar e dividir. Isso facilita a leitura e compreensão do código.
+-->
+
+4. Teste de erros:
+
+O teste de erros consiste em verificar se o código apresenta erros. Isso garante que o código funcione corretamente e atenda às expectativas dos usuários.
+
+<!--
+No exemplo, a função calcular verifica se a operação é válida antes de realizar o cálculo. Isso evita erros de operação inválida e garante que o código funcione corretamente.
+-->
+
+5. Documentação:
+
+A documentação consiste em fornecer informações sobre o código, como sua função, funcionamento e como usá-lo. Uma boa documentação facilita a compreensão, o uso e a manutenção do código.
+
+<!--
+No exemplo, as funções possuem comentários que explicam seu funcionamento. Isso facilita a compreensão e o uso das funções.
+-->
+
+6. Ausência de bugs:
+
+A ausência de bugs significa que o código não apresenta erros que afetem seu funcionamento. Um código livre de bugs é mais confiável e seguro para os usuários.
+
+<!--
+No exemplo, o código foi testado e não apresenta erros conhecidos. Isso garante que o código funcione corretamente e seja confiável para os usuários.
+-->
+
+7. Eficiência:
+
+A eficiência se refere à capacidade do código de realizar suas tarefas de forma rápida e com o mínimo de recursos. Um código eficiente utiliza algoritmos eficientes e evita desperdícios de recursos.
+
+<!--
+No exemplo, o código utiliza algoritmos eficientes para realizar os cálculos matemáticos. Isso garante que o código funcione rapidamente e utilize o mínimo de recursos.
+-->
+
+8. Portabilidade:
+
+A portabilidade se refere à capacidade do código de ser executado em diferentes plataformas e ambientes. Um código portátil pode ser usado em diferentes sistemas operacionais, navegadores e dispositivos.
+
+<!--
+No exemplo, o código pode ser executado em qualquer navegador que suporte JavaScript. Isso garante que o código seja portátil e possa ser usado em diferentes plataformas e dispositivos.
+-->
+
+9. Compatibilidade:
+
+A compatibilidade se refere à capacidade do código de funcionar com diferentes versões de software e hardware. Um código compatível pode ser usado com diferentes versões do JavaScript e de outros softwares.
+
+<!--
+No exemplo, o código é compatível com diferentes versões do JavaScript. Isso garante que o código possa ser usado com diferentes versões do software e hardware.
+-->
+
+10. Desempenho:
+
+O desempenho se refere à capacidade do código de responder rapidamente às solicitações dos usuários. Um código com bom desempenho oferece uma boa experiência de uso para os usuários.
+
+<!--
+No exemplo, o código responde rapidamente às solicitações do usuário. Isso garante que o código ofereça uma boa experiência de uso para os usuários.
+-->
+
+Fatores que influenciam a qualidade de software:
+
+* Processo de desenvolvimento: A qualidade do software depende do processo de desenvolvimento utilizado. Um processo bem definido e documentado ajuda a garantir que o software seja desenvolvido de forma eficiente e eficaz.
+* Qualidade dos requisitos: A qualidade dos requisitos é fundamental para a qualidade do software. Requisitos claros, completos e consistentes facilitam o desenvolvimento do software e evitam problemas futuros.
+* Testes: Os testes são essenciais para garantir a qualidade do software. Testes rigorosos podem identificar e corrigir erros antes que o software seja lançado para os usuários.
+* Ferramentas: As ferramentas utilizadas no desenvolvimento de software podem influenciar sua qualidade. Ferramentas adequadas podem ajudar a aumentar a produtividade e a qualidade do código.
+* Pessoas: As pessoas envolvidas no desenvolvimento de software também influenciam sua qualidade. Desenvolvedores experientes e qualificados são essenciais para a criação de software de alta qualidade.
+
+Benefícios de um software de qualidade:
+
+* Satisfação dos usuários: Um software de qualidade atende às necessidades dos usuários e proporciona uma boa experiência de uso.
+* Redução de custos: Um software de qualidade é menos propenso a apresentar erros e bugs, o que reduz os custos de manutenção e correção.
+* Aumento da produtividade: Um software de qualidade facilita o trabalho dos usuários e aumenta sua produtividade.
+* Melhoria da imagem da empresa: Uma empresa que oferece software de qualidade terá uma imagem mais positiva no mercado.
+
+Em resumo... A qualidade de software é um fator essencial para o sucesso de qualquer software. Um software de qualidade deve atender às necessidades dos usuários, ser livre de erros, fácil de usar e manter, e seguro. Investir na qualidade de software pode trazer muitos benefícios para as empresas e para os usuários.
+
+### Mãos à obra
+
+Dado o código a seguir, encaixe 
+```
+JavaScript
+function somar(a, b) {
+  return a + b;
+}
+
+function subtrair(a, b) {
+  return a - b;
+}
+
+function multiplicar(a, b) {
+  return a * b;
+}
+
+function dividir(a, b) {
+  return a / b;
+}
+
+function calcular(operacao, a, b) {
+  switch (operacao) {
+    case '+':
+      return somar(a, b);
+    case '-':
+      return subtrair(a, b);
+    case '*':
+      return multiplicar(a, b);
+    case '/':
+      return dividir(a, b);
+    default:
+      throw new Error('Operação inválida');
+  }
+}
+
+const resultado = calcular('+', 2, 3);
+console.log(resultado); // 5
+
+const resultado2 = calcular('*', 4, 5);
+console.log(resultado2); // 20
+```
+
 ## 1 Refatoração
 
 A refatoração de programa é o processo de reestruturar e modificar o código fonte de um programa de software, sem alterar seu comportamento externo. 
@@ -632,6 +788,10 @@ Quando usar o Replace Temp With Query:
 ### Debugando códigos
 
 ### Desafio! Dados os códigos acima, você detectou algum tipo de debug de código?
+
+
+remover comentário na fonte
+
 
 <!--
 <picture>
