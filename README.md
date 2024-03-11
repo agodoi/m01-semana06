@@ -100,7 +100,7 @@ O desempenho se refere à capacidade do código de responder rapidamente às sol
 No exemplo, o código responde rapidamente às solicitações do usuário. Isso garante que o código ofereça uma boa experiência de uso para os usuários.
 -->
 
-### Mãos à obra
+### Mãos à obra (EXERCÍCIO EM GRUPO)
 
 
 <picture>
