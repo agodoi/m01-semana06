@@ -144,7 +144,7 @@ console.log(resultado2); // 20
 ```
 
 
-Fatores que influenciam a qualidade de software:
+#### Fatores que influenciam a qualidade de software:
 
 * Processo de desenvolvimento: A qualidade do software depende do processo de desenvolvimento utilizado. Um processo bem definido e documentado ajuda a garantir que o software seja desenvolvido de forma eficiente e eficaz.
 * Qualidade dos requisitos: A qualidade dos requisitos é fundamental para a qualidade do software. Requisitos claros, completos e consistentes facilitam o desenvolvimento do software e evitam problemas futuros.
@@ -152,7 +152,7 @@ Fatores que influenciam a qualidade de software:
 * Ferramentas: As ferramentas utilizadas no desenvolvimento de software podem influenciar sua qualidade. Ferramentas adequadas podem ajudar a aumentar a produtividade e a qualidade do código.
 * Pessoas: As pessoas envolvidas no desenvolvimento de software também influenciam sua qualidade. Desenvolvedores experientes e qualificados são essenciais para a criação de software de alta qualidade.
 
-Benefícios de um software de qualidade:
+#### Benefícios de um software de qualidade:
 
 * Satisfação dos usuários: Um software de qualidade atende às necessidades dos usuários e proporciona uma boa experiência de uso.
 * Redução de custos: Um software de qualidade é menos propenso a apresentar erros e bugs, o que reduz os custos de manutenção e correção.
@@ -176,7 +176,7 @@ Em resumo... A qualidade de software é um fator essencial para o sucesso de qua
 * CMMI --> Capability Maturity Model Integration. Modelo da SEI (Instituto de Engenharia de Software do Departamento de Defesa dos USA) para avaliação da qualidade do processo de desenvolvimento de software. Não é uma norma ISO, mas é muito bem aceita no mercado.
 * SPICE ISO 15504 --> Projeto da ISO/IEC para avaliação do processo de desenvolvimento de software. Ainda não é uma norma oficial ISO, mas o processo está em andamento.
 * 
-### Como Medir a Qualidade
+### Outros Aspector de Como Medir a Qualidade
 
 [Acesse o link](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
 
@@ -185,25 +185,25 @@ Em resumo... A qualidade de software é um fator essencial para o sucesso de qua
 
 A refatoração de programa é o processo de reestruturar e modificar o código fonte de um programa de software, sem alterar seu comportamento externo. 
 
-## Objetivo da Refatoração
+### Objetivo da Refatoração
 
 Melhorar a qualidade interna do código, tornando-o mais legível, compreensível, eficiente e fácil de dar manutenção, sem introduzir novas funcionalidades ou bugs.
 
-## O que fazer numa Refagoração?
+### O que fazer numa Refagoração?
 
 Durante o processo de refatoração, os desenvolvedores podem reorganizar a estrutura do código, renomear variáveis e funções, extrair partes do código para funções separadas, eliminar duplicações, simplificar a lógica do programa e realizar outras mudanças que visam tornar o código mais limpo e claro. 
 
 Isso ajuda a reduzir a complexidade do código, facilitando sua compreensão e modificação no futuro.
 
-## Quando usar Refatoração?
+### Quando usar Refatoração?
 
 * Quando adicionar uma funcionalidade
 * Ao corrigir um bug
 * Ao revisar um código
 
-## Métodos de Refatoração
+### Métodos de Refatoração
 
-### Método Pull-up
+#### Método Pull-up
 
 O método "Pull-up Method" na refatoração de programas é uma técnica que visa **mover um método de uma classe filha para uma classe pai**, quando esse método é usado por várias classes filhas e possui o mesmo comportamento em todas elas. 
 
@@ -301,7 +301,7 @@ Quando usar o Pull-up Method:
 * Quando o método tem o mesmo comportamento em todas as classes filhas.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-### Método de Refatoração Pull-up field
+#### Método de Refatoração Pull-up field
 
 Pull-up Field é uma técnica de refatoração de programas que visa **mover um atributo de uma classe filha para uma classe pai**, quando esse atributo é usado por várias classes filhas e possui o mesmo valor em todas elas.
 
@@ -392,7 +392,7 @@ Quando usar o Pull-up Field:
 * Quando o atributo tem o mesmo valor em todas as classes filhas.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-### Método de Refatoração Push-down
+#### Método de Refatoração Push-down
 
 O Push Down Method é uma técnica de refatoração de programas que visa **mover um método de uma classe pai para uma classe filha**, quando esse método é usado apenas por uma classe filha específica.
 
@@ -473,7 +473,7 @@ Quando usar o Push Down Method:
 * Quando você deseja evitar código morto na classe pai.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-### Método de Refatoração Push-down field
+#### Método de Refatoração Push-down field
 
 O Push Down Field é uma técnica de refatoração que visa **mover um atributo de uma classe pai para uma classe filha** quando esse atributo é utilizado apenas por essa classe filha.
 
@@ -546,7 +546,7 @@ Quando usar o Push Down Field:
 * Quando você deseja evitar duplicação de código na classe pai.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-### Método de Refatoração Extract Subclass
+#### Método de Refatoração Extract Subclass
 
 Esse método é utilizado quando uma classe possui funcionalidades que são usada somente em algumas instâncias. Então, você deve remover essas funcionalidades para uma classe específica, ou seja, visa criar uma nova subclasse a partir de uma classe existente, quando um conjunto de funcionalidades dentro da classe original é utilizado apenas por um subconjunto de seus objetos. 
 
@@ -633,7 +633,7 @@ Quando usar o Extract Subclass:
 * Quando você deseja melhorar a organização, legibilidade e manutenabilidade do código.
 * Quando você deseja aplicar o princípio da responsabilidade única, ou seja, cada classe deve ter um único propósito.
  
-### Método Extract Super Class
+#### Método Extract Super Class
 
 O Extract Superclass visa **criar uma nova superclasse a partir de um conjunto de características comuns em duas ou mais classes filhas**. 
 
@@ -733,13 +733,13 @@ Quando usar o Extract Superclass:
 * Quando você deseja eliminar a duplicação de código.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-### Método Replace Temp With Query
+#### Método Replace Temp With Query
 
 É uma técnica de refatoração que visa eliminar variáveis temporárias que armazenam o resultado de expressões complexas. Essa técnica substitui a variável por uma chamada direta à função que calcula a expressão, tornando o código mais legível e fácil de manter.
 
 Exemplo: suponha que temos uma função que calcula o preço total de uma compra com base na quantidade de itens e no preço unitário, e queremos aplicar um desconto de 10% se o preço total for maior que $100.
 
-#### Antes da refatoração:
+**Antes da refatoração:**
 
 ```
 function calculateTotalPrice(quantity, unitPrice) {
@@ -756,7 +756,7 @@ function calculateTotalPrice(quantity, unitPrice) {
 console.log(calculateTotalPrice(5, 25)); // Saída: 125
 ```
 
-#### Após a refatoração:
+**Após a refatoração:**
 
 ```
 function calculateTotalPrice(quantity, unitPrice) {
@@ -803,7 +803,7 @@ Quando usar o Replace Temp With Query:
 * Quando você deseja melhorar a legibilidade e facilitar a manutenção do código.
 * Quando você deseja evitar erros relacionados ao cálculo do valor da variável temporária.
 
-### Debugando códigos
+## Debugando códigos
 
 ### Desafio! Dados os códigos acima, você detectou algum tipo de debug de código?
 
@@ -818,3 +818,11 @@ remover comentário na fonte
 </picture>
 
 --> 
+
+## DESAFIO!
+
+O grupo deve escolher um método de refatoração, desenvolver um código e apresentar o antes e o depois da refatoração.
+
+O melhor grupo leva um prêmio!
+
+
