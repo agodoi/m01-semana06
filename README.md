@@ -126,3 +126,94 @@ Quando usar o Pull-up Method:
 * Quando um método é duplicado em várias classes filhas.
 * Quando o método tem o mesmo comportamento em todas as classes filhas.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
+
+### Método Pull-up field
+
+Pull-up Field é uma técnica de refatoração de programas que visa **mover um atributo de uma classe filha para uma classe pai**, quando esse atributo é usado por várias classes filhas e possui o mesmo valor em todas elas.
+
+Exemplo em JavaScript:
+
+Considere um código com duas classes filhas, ```Cachorro``` e ```Gato```, que herdam de uma classe pai ```Animal```. Ambas as classes filhas possuem um atributo especie com o mesmo valor:
+
+```
+class Animal {
+  constructor(nome) {
+    this.nome = nome;
+  }
+}
+
+//classe Cachorro herdando de Animal
+class Cachorro extends Animal {
+  constructor(nome) {
+    super(nome);
+    this.especie = 'Cachorro';
+  }
+}
+
+//classe Gato herdando de Animal
+class Gato extends Animal {
+  constructor(nome) {
+    super(nome);
+    this.especie = 'Gato';
+  }
+}
+
+// Criando instâncias de Cachorro e Gato
+const cachorro = new Cachorro('Rex');
+console.log(cachorro.especie); // Cachorro
+
+// Acessando o atributo `especie` nas instâncias
+const gato = new Gato('Mia');
+console.log(gato.especie); // Gato
+
+```
+
+Observe que o atributo ```especie``` é duplicado nas classes Cachorro e Gato. Podemos usar o Pull-up Field para mover esse atributo para a classe pai Animal, onde será definido apenas uma vez e herdado por ambas as classes filhas:
+
+JavaScript
+class Animal {
+  constructor(nome) {
+    this.nome = nome;
+    this.especie = 'Animal';
+  }
+}
+
+class Cachorro extends Animal {
+  constructor(nome) {
+    super(nome);
+  }
+}
+
+class Gato extends Animal {
+  constructor(nome) {
+    super(nome);
+  }
+}
+
+const cachorro = new Cachorro('Rex');
+console.log(cachorro.especie); // Animal
+
+const gato = new Gato('Mia');
+console.log(gato.especie); // Animal
+```
+
+Neste exemplo, o atributo especie foi movido para a classe Animal. Agora, ele tem o mesmo valor em ambas as classes filhas, sem duplicação de código.
+
+#### Observações
+
+Benefícios do Pull-up Field:
+
+* Evita duplicação de código: reduz a quantidade de código repetido em diferentes classes.
+* Aumenta a legibilidade: torna o código mais fácil de entender e manter.
+* Facilita a manutenção: Permite modificar o valor em um único lugar, impactando todas as classes que o utilizam.
+
+Limitações do Pull-up Field:
+
+* Nem sempre é possível: O atributo só pode ser movido se for usado por todas as classes filhas com o mesmo valor.
+* Pode afetar a performance: Se o atributo for muito grande, movê-lo para a classe pai pode aumentar o tamanho da classe e afetar a performance.
+
+Quando usar o Pull-up Field:
+
+* Quando um atributo é duplicado em várias classes filhas.
+* Quando o atributo tem o mesmo valor em todas as classes filhas.
+* Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
