@@ -102,6 +102,9 @@ No exemplo, o código responde rapidamente às solicitações do usuário. Isso 
 
 ### Mãos à obra
 
+
+
+
 Dado o código a seguir, o grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens.
 
 ```
