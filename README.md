@@ -170,7 +170,7 @@ console.log(gato.especie); // Gato
 
 Observe que o atributo ```especie``` é duplicado nas classes Cachorro e Gato. Podemos usar o Pull-up Field para mover esse atributo para a classe pai Animal, onde será definido apenas uma vez e herdado por ambas as classes filhas:
 
-JavaScript
+```
 class Animal {
   constructor(nome) {
     this.nome = nome;
