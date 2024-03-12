@@ -19,7 +19,7 @@ Lógica algorítmica
   *   Turma 13: Fernando Vasconcellos (fernando.vasconcellos@sou.inteli.edu.br), atenderá nas segundas e quartas-feiras, das 8h30 às 9h30 no ateliê da turma e outras 2h de atendimento será por pedidos feitas no e-mail dele.
 
 
-## Mudança de Cena com Transmissão de Parâmetros
+## Revisão de Mudança de Cena com Transmissão de Parâmetros
 
 [Semana 04](https://github.com/agodoi/m01-semana04)
 
@@ -125,8 +125,6 @@ No exemplo, o código responde rapidamente às solicitações do usuário. Isso 
 </picture>
 
 
-
-
 Dado o código a seguir:
 
 ```
@@ -172,7 +170,9 @@ console.log(resultado2); // 20
 
 #### 3 GRUPOS FELIZARDOS SERÃO SORTEADOS PARA VIR EXPLICAR...
 
-#### Fatores que influenciam a qualidade de software:
+#### 30min de atividade.
+
+### Fatores que influenciam a qualidade de software:
 
 * Processo de desenvolvimento: A qualidade do software depende do processo de desenvolvimento utilizado. Um processo bem definido e documentado ajuda a garantir que o software seja desenvolvido de forma eficiente e eficaz.
 * Qualidade dos requisitos: A qualidade dos requisitos é fundamental para a qualidade do software. Requisitos claros, completos e consistentes facilitam o desenvolvimento do software e evitam problemas futuros.
@@ -180,7 +180,7 @@ console.log(resultado2); // 20
 * Ferramentas: As ferramentas utilizadas no desenvolvimento de software podem influenciar sua qualidade. Ferramentas adequadas podem ajudar a aumentar a produtividade e a qualidade do código.
 * Pessoas: As pessoas envolvidas no desenvolvimento de software também influenciam sua qualidade. Desenvolvedores experientes e qualificados são essenciais para a criação de software de alta qualidade.
 
-#### Benefícios de um software de qualidade:
+### Benefícios de um software de qualidade:
 
 * Satisfação dos usuários: Um software de qualidade atende às necessidades dos usuários e proporciona uma boa experiência de uso.
 * Redução de custos: Um software de qualidade é menos propenso a apresentar erros e bugs, o que reduz os custos de manutenção e correção.
@@ -203,7 +203,8 @@ Em resumo... A qualidade de software é um fator essencial para o sucesso de qua
 * NBR ISO 10011 --> Auditoria de Sistemas de Qualidade (processo).
 * CMMI --> Capability Maturity Model Integration. Modelo da SEI (Instituto de Engenharia de Software do Departamento de Defesa dos USA) para avaliação da qualidade do processo de desenvolvimento de software. Não é uma norma ISO, mas é muito bem aceita no mercado.
 * SPICE ISO 15504 --> Projeto da ISO/IEC para avaliação do processo de desenvolvimento de software. Ainda não é uma norma oficial ISO, mas o processo está em andamento.
-* 
+
+  
 ### Outros Aspector de Como Medir a Qualidade
 
 [Acesse o link](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
@@ -231,7 +232,19 @@ Isso ajuda a reduzir a complexidade do código, facilitando sua compreensão e m
 
 ### Métodos de Refatoração
 
-#### Método Pull-up
+Existem 5 maneiras de refatorar um código-fonte:
+
+#### 1) Método Pull-up
+#### 2) Método Pull-up field
+#### 3) Método Pull-down
+#### 4) Método Pull-down field
+#### 5) Extract Subclass
+#### 6) Extract Super Class
+#### 7) Método Replace Temp With Query
+
+Vejamos em detalhes cada método de refatoração de código-fonte.
+
+#### 1) Método Pull-up
 
 O método "Pull-up Method" na refatoração de programas é uma técnica que visa **mover um método de uma classe filha para uma classe pai**, quando esse método é usado por várias classes filhas e possui o mesmo comportamento em todas elas. 
 
@@ -309,7 +322,7 @@ gato.comer(); // O Gato Mia está comendo!
 
 Neste exemplo, o método ```comer``` foi movido para a classe ```Animal```. Agora, ele é executado da mesma maneira em ambas as classes filhas, sem duplicação de código.
 
-#### Observações
+#### 1.1) Observações
 
 Benefícios do Pull-up Method:
 
@@ -329,7 +342,7 @@ Quando usar o Pull-up Method:
 * Quando o método tem o mesmo comportamento em todas as classes filhas.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-#### Método de Refatoração Pull-up field
+#### 2) Método de Refatoração Pull-up field
 
 Pull-up Field é uma técnica de refatoração de programas que visa **mover um atributo de uma classe filha para uma classe pai**, quando esse atributo é usado por várias classes filhas e possui o mesmo valor em todas elas.
 
@@ -401,7 +414,7 @@ console.log(gato.especie); // Animal
 
 Neste exemplo, o atributo especie foi movido para a classe Animal. Agora, ele tem o mesmo valor em ambas as classes filhas, sem duplicação de código.
 
-#### Observações
+#### 2.1) Observações
 
 Benefícios do Pull-up Field:
 
@@ -420,7 +433,7 @@ Quando usar o Pull-up Field:
 * Quando o atributo tem o mesmo valor em todas as classes filhas.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-#### Método de Refatoração Push-down
+#### 3) Método de Refatoração Push-down
 
 O Push Down Method é uma técnica de refatoração de programas que visa **mover um método de uma classe pai para uma classe filha**, quando esse método é usado apenas por uma classe filha específica.
 
@@ -482,7 +495,7 @@ cachorro.latir(); // O cachorro Rex está latindo!
 
 Neste exemplo, o método ```comer``` foi movido para a classe ```Cachorro```. Agora, o método ```comer``` não está presente na classe ```Animal```, evitando código morto.
 
-#### Observações:
+#### 3.1) Observações:
 
 Benefícios do Push Down Method:
 
@@ -501,7 +514,7 @@ Quando usar o Push Down Method:
 * Quando você deseja evitar código morto na classe pai.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-#### Método de Refatoração Push-down field
+#### 4) Método de Refatoração Push-down field
 
 O Push Down Field é uma técnica de refatoração que visa **mover um atributo de uma classe pai para uma classe filha** quando esse atributo é utilizado apenas por essa classe filha.
 
@@ -555,7 +568,7 @@ console.log(cachorro.especie); // "Cachorro"
 
 Neste exemplo, o atributo ```especie``` foi movido para a classe ```Cachorro```. Agora, o atributo ```especie``` não está presente na classe ```Animal```, evitando duplicação de código.
 
-#### Observações:
+#### 4.1) Observações:
 
 Benefícios do Push Down Field:
 
@@ -574,7 +587,7 @@ Quando usar o Push Down Field:
 * Quando você deseja evitar duplicação de código na classe pai.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-#### Método de Refatoração Extract Subclass
+#### 5) Método de Refatoração Extract Subclass
 
 Esse método é utilizado quando uma classe possui funcionalidades que são usada somente em algumas instâncias. Então, você deve remover essas funcionalidades para uma classe específica, ou seja, visa criar uma nova subclasse a partir de uma classe existente, quando um conjunto de funcionalidades dentro da classe original é utilizado apenas por um subconjunto de seus objetos. 
 
@@ -642,7 +655,7 @@ bicicleta.pedalar(); // A bicicleta Caloi está pedalando!
 
 Neste exemplo, a classe ```Veiculo``` foi dividida em duas subclasses: ```Carro``` e ```Bicicleta```. Cada subclasse possui os métodos específicos para o tipo de veículo que representa.
 
-#### Observações
+#### 5.1) Observações
 
 Benefícios do Extract Subclass:
 
@@ -661,7 +674,7 @@ Quando usar o Extract Subclass:
 * Quando você deseja melhorar a organização, legibilidade e manutenabilidade do código.
 * Quando você deseja aplicar o princípio da responsabilidade única, ou seja, cada classe deve ter um único propósito.
  
-#### Método Extract Super Class
+#### 6) Método Extract Super Class
 
 O Extract Superclass visa **criar uma nova superclasse a partir de um conjunto de características comuns em duas ou mais classes filhas**. 
 
@@ -742,7 +755,7 @@ gato.miar(); // O gato Mia está miando!
 
 Neste exemplo, a superclasse ```Mamifero``` foi criada para agrupar as características comuns das classes ```Cachorro``` e ```Gato```. As classes filhas herdam essas características e implementam seus próprios métodos específicos.
 
-#### Observações
+#### 6.1) Observações
 
 Benefícios do Extract Superclass:
 
@@ -761,7 +774,7 @@ Quando usar o Extract Superclass:
 * Quando você deseja eliminar a duplicação de código.
 * Quando você deseja aumentar a legibilidade e facilitar a manutenção do código.
 
-#### Método Replace Temp With Query
+#### 7) Método Replace Temp With Query
 
 É uma técnica de refatoração que visa eliminar variáveis temporárias que armazenam o resultado de expressões complexas. Essa técnica substitui a variável por uma chamada direta à função que calcula a expressão, tornando o código mais legível e fácil de manter.
 
@@ -812,7 +825,7 @@ console.log(calculateTotalPrice(5, 25)); // Saída: 125
 
 Neste exemplo, inicialmente tínhamos uma variável temporária ```totalPrice``` que armazenava o preço total calculado. Após a refatoração, essa variável temporária foi removida e substituída por uma chamada à função ```calculateDiscountedPrice```, que calcula o preço total com o desconto aplicado. Isso elimina a necessidade da variável temporária e torna o código mais claro e conciso.
 
-#### Observações
+#### 7.1) Observações
 
 Benefícios do Replace Temp With Query:
 
@@ -833,7 +846,7 @@ Quando usar o Replace Temp With Query:
 
 ## Debugando códigos
 
-### Desafio! Dados os códigos acima, você detectou algum tipo de debug de código?
+### DESAFIO 1: Dados os códigos acima, você detectou algum tipo de debug de código?
 
 
 remover comentário no markdown.
@@ -847,9 +860,7 @@ remover comentário no markdown.
 
 --> 
 
-## DESAFIO!
-
-O grupo deve escolher um método de refatoração, desenvolver um código e apresentar o antes e o depois da refatoração.
+### DESAFIO 2: O grupo deve escolher um método de refatoração, desenvolver um código e apresentar o antes e o depois da refatoração.
 
 O melhor grupo leva um prêmio!
 
