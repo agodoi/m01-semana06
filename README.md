@@ -41,7 +41,7 @@ Mas vamos focar nesses aqui:
 A modularidade se refere à organização do código em unidades menores e independentes, chamadas de módulos. Cada módulo possui uma função específica e bem definida, o que torna o código mais organizado, fácil de entender e modificar.
 
 <!--
-No exemplo, as funções somar, subtrair, multiplicar e dividir são módulos que implementam operações matemáticas específicas. A função calcular utiliza esses módulos para realizar diferentes operações, evitando duplicação de código e aumentando a legibilidade.
+No exemplo, as funções somar, subtrair, multiplicar e dividir são módulos que implementam operações matemáticas específicas. A função ```calcular``` utiliza esses módulos para realizar diferentes operações, evitando duplicação de código e aumentando a legibilidade.
 -->
 
 ### 2. Reuso de código:
@@ -49,7 +49,7 @@ No exemplo, as funções somar, subtrair, multiplicar e dividir são módulos qu
 O reuso de código consiste em utilizar o mesmo código em diferentes partes do programa. Isso evita duplicação de código e aumenta a eficiência do desenvolvimento.
 
 <!--
-No exemplo, a função calcular reutiliza as funções somar, subtrair, multiplicar e dividir para realizar diferentes operações matemáticas. Isso evita a duplicação do código que realiza os cálculos matemáticos e torna o código mais eficiente.
+No exemplo, a função ```calcular``` reutiliza as funções ```somar```, ```subtrair```, ```multiplicar``` e ```dividir``` para realizar diferentes operações matemáticas. Isso evita a duplicação do código que realiza os cálculos matemáticos e torna o código mais eficiente.
 -->
 
 ### 3. Legibilidade:
@@ -57,7 +57,7 @@ No exemplo, a função calcular reutiliza as funções somar, subtrair, multipli
 A legibilidade se refere à facilidade de ler e entender o código. Um código legível é escrito de forma clara, concisa e organizada, com nomes de variáveis e funções descritivos.
 
 <!--
-No exemplo, o código está bem formatado e utiliza nomes de variáveis e funções descritivos, como somar, subtrair, multiplicar e dividir. Isso facilita a leitura e compreensão do código.
+No exemplo, o código está bem formatado e utiliza nomes de variáveis e funções descritivos, como ```somar```, ```Vsubtrair```, ```multiplicar``` e ```dividir```. Isso facilita a leitura e compreensão do código.
 -->
 
 ### 4. Teste de erros:
@@ -65,7 +65,7 @@ No exemplo, o código está bem formatado e utiliza nomes de variáveis e funç�
 O teste de erros consiste em verificar se o código apresenta erros. Isso garante que o código funcione corretamente e atenda às expectativas dos usuários.
 
 <!--
-No exemplo, a função calcular verifica se a operação é válida antes de realizar o cálculo. Isso evita erros de operação inválida e garante que o código funcione corretamente.
+No exemplo, a função ```calcular``` verifica se a operação é válida antes de realizar o ```cálculo```. Isso evita erros de operação inválida e garante que o código funcione corretamente.
 -->
 
 ### 5. Documentação:
