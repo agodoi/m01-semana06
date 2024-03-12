@@ -8,7 +8,7 @@ Lógica algorítmica
 
 ## Mudança de Cena com Transmissão de Parâmetros
 
-[Semana 04](https://github.com/agodoi/m01-semana04/README.md]
+(Semana 04)[https://github.com/agodoi/m01-semana04]
 
 ## O que é Qualidade de Software?
 
