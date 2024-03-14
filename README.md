@@ -851,9 +851,6 @@ Quando usar o Replace Temp With Query:
 ### Se você reparar exemplos de refatoração de códigos acima, temos o debug de código tipo prompt, isto é, impressões de dados no console.
 
 
-remover comentário no markdown.
-
-
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana06/blob/main/imgs/Capture.PNG">
    <img alt="Página HTML Estática" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana06/blob/main/imgs/Capture.PNG)">
