@@ -19,9 +19,11 @@ Lógica algorítmica
   *   Turma 13: Fernando Vasconcellos (fernando.vasconcellos@sou.inteli.edu.br), atenderá nas segundas e quartas-feiras, das 8h30 às 9h30 no ateliê da turma e outras 2h de atendimento será por pedidos feitas no e-mail dele.
 
 
-## Revisão de Mudança de Cena com Transmissão de Parâmetros
+## O que fazer no seu projeto?
 
-[Semana 04](https://github.com/agodoi/m01-semana04)
+### Mudança de cenas transmitindo dados [Semana 04](https://github.com/agodoi/m01-semana04)
+### Refatore seu projeto (aula de hoje)
+### Cuide da qualidade do software (aula de hoje)
 
 ## O que é Qualidade de Software?
 
