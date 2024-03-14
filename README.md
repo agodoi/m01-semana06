@@ -168,11 +168,11 @@ const resultado2 = calcular('*', 4, 5);
 console.log(resultado2); // 20
 ```
 
-#### O que precisa fazer? O grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens.
+#### O que precisa fazer? O grupo deve encaixar os 10 itens acima nesse código, encontrando e justificando o uso dos 10 itens. NÃO REFATORE!
 
 #### 3 GRUPOS FELIZARDOS SERÃO SORTEADOS PARA VIR EXPLICAR...
 
-#### 30min de atividade.
+#### 20min de atividade.
 
 ### Fatores que influenciam a qualidade de software:
 
@@ -848,21 +848,20 @@ Quando usar o Replace Temp With Query:
 
 ## Debugando códigos
 
-### DESAFIO 1: Dados os códigos acima, você detectou algum tipo de debug de código?
+### Se você reparar exemplos de refatoração de códigos acima, temos o debug de código tipo prompt, isto é, impressões de dados no console.
 
 
 remover comentário no markdown.
 
 
-<!--
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana06/blob/main/imgs/Capture.PNG">
    <img alt="Página HTML Estática" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana06/blob/main/imgs/Capture.PNG)">
 </picture>
 
---> 
+### DESAFIO 2: Hora de Refatorar
 
-### DESAFIO 2: O grupo deve escolher um método de refatoração, desenvolver um código e apresentar o antes e o depois da refatoração.
+O grupo deve escolher um método de refatoração e mexer no código da calculadora e apresentar o antes e o depois da refatoração.
 
 O melhor grupo leva um prêmio!
 
