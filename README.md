@@ -214,7 +214,7 @@ Em resumo... A qualidade de software é um fator essencial para o sucesso de qua
 [Acesse o link](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
 
 
-## 1 Refatoração
+## Refatoração
 
 A refatoração de programa é o processo de reestruturar e modificar o código fonte de um programa de software, sem alterar seu comportamento externo. 
 
