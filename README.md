@@ -21,9 +21,9 @@ Lógica algorítmica
 
 ## O que fazer no seu projeto?
 
-### Mudança de cenas transmitindo dados [Semana 04](https://github.com/agodoi/m01-semana04)
-### Refatore seu projeto (aula de hoje)
-### Cuide da qualidade do software (aula de hoje)
+### Mudança de cenas transmitindo dados: [Semana 04](https://github.com/agodoi/m01-semana04)
+### Refatore seu projeto: (aula de hoje)
+### Cuide da qualidade do software: (aula de hoje)
 
 ## O que é Qualidade de Software?
 
