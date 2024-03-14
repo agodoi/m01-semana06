@@ -174,6 +174,8 @@ console.log(resultado2); // 20
 
 #### 20min de atividade.
 
+## Conclusões:
+
 ### Fatores que influenciam a qualidade de software:
 
 * Processo de desenvolvimento: A qualidade do software depende do processo de desenvolvimento utilizado. Um processo bem definido e documentado ajuda a garantir que o software seja desenvolvido de forma eficiente e eficaz.
